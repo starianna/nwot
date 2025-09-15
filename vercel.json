@@ -6,7 +6,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/frontend/templates/yourworld.html"
+      "destination": "/public/index.html"
     }
   ],
   "build": {
