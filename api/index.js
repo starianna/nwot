@@ -96,8 +96,8 @@ function maintenanceMode() {
 	});
 }
 
-/*module.exports = app;
+module.exports = app;
 
 module.exports = (req, res) => {
   res.status(200).send('test fork');
-};*/
+};
