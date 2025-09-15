@@ -3,11 +3,11 @@
 	<head>
 		<title>{{ page_title }}</title>
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-		<link rel="shortcut icon" type="image/png" href="/static/favicon.png">
+		<link rel="shortcut icon" type="image/png" href="/frontend/static/favicon.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		{% if meta_desc %}<meta name="description" content="{{meta_desc}}">{% else %}<meta name="description" content="Infinitely large website. Write anywhere.">{% endif %}
-		<meta property="og:image" content="/static/logo.png">
-		<link type="text/css" rel="stylesheet" href="/static/css/yourworld.css{{ staticVersion }}">
+		<meta property="og:image" content="/frontend/static/logo.png">
+		<link type="text/css" rel="stylesheet" href="/frontend/static/css/yourworld.css{{ staticVersion }}">
 		{% for script in user.scripts %}<script src="/script_manager/view/{{ script.name }}/"></script>{% endfor %}
 	</head>
 	<body>
@@ -135,13 +135,13 @@
 			</div>
 		</div>
 
-		<script src="/static/yw/javascript/helpers.js{{ staticVersion }}"></script>
-		<script src="/static/lib/jscolor.min.js{{ staticVersion }}"></script>
-		<script src="/static/yw/javascript/modals.js{{ staticVersion }}"></script>
-		<script src="/static/yw/javascript/menu.js{{ staticVersion }}"></script>
-		<script src="/static/yw/javascript/permissions.js{{ staticVersion }}"></script>
-		<script src="/static/yw/javascript/chat.js{{ staticVersion }}"></script>
-		<script src="/static/yw/javascript/renderer.js{{ staticVersion }}"></script>
-		<script src="/static/yw/javascript/owot.js{{ staticVersion }}"></script>
+		<script src="frontend/static/yw/javascript/helpers.js"></script>
+		<script src="frontend/static/lib/jscolor.min.js"></script>
+		<script src="frontend/static/yw/javascript/modals.js"></script>
+		<script src="frontend/static/yw/javascript/menu.js"></script>
+		<script src="frontend/static/yw/javascript/permissions.js"></script>
+		<script src="frontend/static/yw/javascript/chat.js"></script>
+		<script src="frontend/static/yw/javascript/renderer.js"></script>
+		<script src="frontend/static/yw/javascript/owot.js"></script>
 	</body>
 </html>
