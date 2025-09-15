@@ -1,5 +1,11 @@
 console.log("Starting process...");
 
+module.exports = app;
+
+module.exports = (req, res) => {
+  res.status(200).send('test fork');
+};
+
 const args = process.argv.slice(2);
 const { fork } = require("child_process");
 const serverPath = "runserver.js";
@@ -95,9 +101,3 @@ function maintenanceMode() {
 		console.log(`Maintenance: [${ip}]:${port}`);
 	});
 }
-
-/*module.exports = app;
-
-module.exports = (req, res) => {
-  res.status(200).send('test fork');
-};*/
