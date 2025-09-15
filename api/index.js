@@ -1,10 +1,13 @@
 console.log("Starting process...");
 
-module.exports = app;
+const express = require('express');
+const app = express();
 
-module.exports = (req, res) => {
-  res.status(200).send('test fork');
-};
+app.get('/', (req, res) => {
+  res.send('Hello from my app!');
+});
+
+module.exports = app;
 
 const args = process.argv.slice(2);
 const { fork } = require("child_process");
