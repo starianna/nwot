@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-app.get('/frontend/templates/yourworld.html', (req, res) => {
+app.get('/api/data', (req, res) => {
   res.json({ message: 'This is some game data.' });
 });
 
