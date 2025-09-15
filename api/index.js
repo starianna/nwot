@@ -3,6 +3,10 @@ console.log("Starting process...");
 const express = require('express');
 const app = express();
 
+app.get('/', (req, res) => {
+  res.send('Hello from my app!');
+});
+
 module.exports = app;
 
 const args = process.argv.slice(2);
