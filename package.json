@@ -11,9 +11,9 @@
 		"ws": "^8.18.0"
 	},
 	"scripts": {
-		"start": "node ./api/index.js",
-		"tst": "node --expose-gc ./api/index.js --test-server",
-		"dbg": "node --trace-warnings --stack-trace-limit=1024 --expose-gc ./api/index.js --test-server"
+		"start": "node api/index.js",
+		"tst": "node --expose-gc api/index.js --test-server",
+		"dbg": "node --trace-warnings --stack-trace-limit=1024 --expose-gc api/index.js --test-server"
 	},
 	"private": true
 }
