@@ -8,7 +8,7 @@ module.exports = (req, res) => {
 
 const args = process.argv.slice(2);
 const { fork } = require("child_process");
-const serverPath = "runserver.js";
+const serverPath = "./runserver.js";
 
 const http = require("http");
 let maintenance_port = null;
