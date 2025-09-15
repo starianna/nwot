@@ -2,7 +2,7 @@ console.log("Starting process...");
 
 const args = process.argv.slice(2);
 const { fork } = require("child_process");
-const serverPath = "./runserver.js";
+const serverPath = "nwot/runserver.js";
 
 const http = require("http");
 let maintenance_port = null;
